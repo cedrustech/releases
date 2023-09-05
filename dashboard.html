@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Release Dashboard - Cedrus Tech</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Icons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * App Name: CTAdmin
+  * Page Name: Dashboard
+  * Updated: Sept 05 2023 with Bootstrap v5.3.1
+  * Owner: Akash Bangalkar
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">CTAdmin</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+	
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-house"></i>
+          <span>Home</span>
+        </a>
+      </li><!-- End Home -->
+	  
+	  <li class="nav-item">
+        <a class="nav-link " href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Projects</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="mme-project.html">
+              <i class="bi bi-circle"></i><span>MME Project</span>
+            </a>
+          </li>
+          <li>
+            <a href="error-404.html">
+              <i class="bi bi-circle"></i><span>Desai Trade</span>
+            </a>
+          </li>
+          <li>
+            <a href="error-404.html">
+              <i class="bi bi-circle"></i><span>Click Up</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Project -->
+	  
+<!-- Page Section -->
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="company-page.html">
+          <i class="bi bi-person"></i>
+          <span>Company</span>
+        </a>
+      </li><!-- End Company Page -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="contact-page.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+        <div class="col-lg-8">
+          <div class="row">
+
+            <!-- Commits Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Commits <span>| This Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-git"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>142</h6>
+                      <span class="text-success small pt-1 fw-bold">8%</span> <span class="text-muted small pt-2 ps-1">increase</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Commits Card -->
+
+            <!-- Bug Resolved Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Bug Resolved</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-bug-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>9</h6>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Bug Resolved Card -->
+
+            <!-- Ongoing Project Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Ongoing Projects</h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi-inboxes-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>4+</h6>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Ongoing Project Card -->
+
+            <!-- Commit Reports -->
+            <div class="col-12">
+              <div class="card">
+
+                <div class="card-body">
+                  <h5 class="card-title">Commit Report</h5>
+
+                  <!-- Line Chart -->
+                  <div id="reportsChart"></div>
+
+                  <script>
+                    document.addEventListener("DOMContentLoaded", () => {
+                      new ApexCharts(document.querySelector("#reportsChart"), {
+                        series: [{
+                          name: 'MME Project',
+                          data: [12, 27, 21, 35, 31, 40, 56],
+                        }, {
+                          name: 'Desai Trade',
+                          data: [0, 0, 8, 29, 36, 30, 24]
+                        }, {
+                          name: 'Other',
+                          data: [4, 11, 13, 18, 9, 15, 12]
+                        }],
+                        chart: {
+                          height: 350,
+                          type: 'area',
+                          toolbar: {
+                            show: false
+                          },
+                        },
+                        markers: {
+                          size: 4
+                        },
+                        colors: ['#4154f1', '#2eca6a', '#ff771d'],
+                        fill: {
+                          type: "gradient",
+                          gradient: {
+                            shadeIntensity: 1,
+                            opacityFrom: 0.3,
+                            opacityTo: 0.4,
+                            stops: [0, 90, 100]
+                          }
+                        },
+                        dataLabels: {
+                          enabled: false
+                        },
+                        stroke: {
+                          curve: 'smooth',
+                          width: 2
+                        },
+                        xaxis: {
+                          type: 'datetime',
+                          categories: ["2023-04", "2023-05", "2023-06", "2023-07", "2023-08", "2023-09", "2023-10"]
+                        },
+                        tooltip: {
+                          x: {
+                            format: 'MM/yy'
+                          },
+                        }
+                      }).render();
+                    });
+                  </script>
+                  <!-- End Line Chart -->
+
+                </div>
+
+              </div>
+            </div><!-- End Commit Reports -->
+
+            <!-- Recent PRs -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+
+                <div class="card-body">
+                  <h5 class="card-title">Recent Pull Requests</h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Project</th>
+                        <th scope="col">Summary</th>
+                        <th scope="col">Branch</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><a>#29f48e4</a></th>
+                        <td>MME Project</td>
+                        <td><a class="text-primary">GST Functionality Feature</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-success">Approved</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><a>#0ae2dfd</a></th>
+                        <td>MME Project</td>
+                        <td><a class="text-primary">Change Invoice Status Icon for "Paid"</a></td>
+                        <td>Hotfix</td>
+                        <td><span class="badge rounded-pill bg-success">Approved</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#80a7564</a></th>
+                        <td>Desai Trade</td>
+                        <td><a class="text-primary">Create LWC Component for Material Object</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-warning">Pending</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#3fa4a35</a></th>
+                        <td>Desai Trade</td>
+                        <td><a class="text-primary">Automation - Sale Items Status Mark</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-success">Approved</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#e5a5d26</a></th>
+                        <td>Desai Trade</td>
+                        <td><a class="text-primary">Implement Functionality to Close Purchase Bill</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-warning">Pending</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#2a07a01</a></th>
+                        <td>MME Project</td>
+                        <td><a class="text-primary">Add the Validation Rules for Date Fields</a></td>
+                        <td>Hotfix</td>
+                        <td><span class="badge rounded-pill bg-warning">Pending</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#738942b</a></th>
+                        <td>MME Project</td>
+                        <td><a class="text-primary">Field Name Changes</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-success">Approved</span></td>
+                      </tr>
+					  <tr>
+                        <th scope="row"><a>#2606ac0</a></th>
+                        <td>Desai Trade</td>
+                        <td><a class="text-primary">Restrict to Create or Modify Sale Data</a></td>
+                        <td>Release</td>
+                        <td><span class="badge rounded-pill bg-danger">Rejected</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div><!-- End Recent PRs -->
+			
+			<!-- Resources -->
+            <div class="col-12">
+				<div class="card">
+					<div class="card-body pb-0">
+					  <h5 class="card-title">Resources</h5>
+
+					  <div id="budgetChart" style="min-height: 400px;" class="echart"></div>
+
+					  <script>
+						document.addEventListener("DOMContentLoaded", () => {
+						  var budgetChart = echarts.init(document.querySelector("#budgetChart")).setOption({
+							legend: {
+							  data: ['Salesforce', 'Other']
+							},
+							radar: {
+							  // shape: 'circle',
+							  indicator: [{
+								  name: 'Sales',
+								  max: 10
+								},
+								{
+								  name: 'Administration',
+								  max: 10
+								},
+								{
+								  name: 'Automation',
+								  max: 10
+								},
+								{
+								  name: 'Development',
+								  max: 10
+								},
+								{
+								  name: 'Customer Support',
+								  max: 10
+								},
+								{
+								  name: 'Report and Dashboard',
+								  max: 10
+								}
+							  ]
+							},
+							series: [{
+							  name: 'Resources Used',
+							  type: 'radar',
+							  data: [{
+								  value: [4, 9, 9, 9, 5, 8],
+								  name: 'Salesforce'
+								},
+								{
+								  value: [7, 2, 4, 7, 7, 2],
+								  name: 'Other'
+								}
+							  ]
+							}]
+						  });
+						});
+					  </script>
+
+					</div>
+				</div><!-- End Resources -->
+            </div>
+          </div>
+        </div><!-- End Left side columns -->
+
+        <!-- Right side columns -->
+        <div class="col-lg-4">
+          <!-- Recent Releases -->
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Recent Releases</h5>
+				<div class="activity">
+
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Sept '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-muted align-self-start'></i>
+						  <div class="activity-content">
+							MME Project <a class="fw-bold text-dark">v3.23.9</a> Base Release
+						  </div>
+					</div><!-- End Activity Item -->
+				
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Sept '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-success align-self-start'></i>
+						  <div class="activity-content">
+							MME Project <a class="fw-bold text-dark">v3.0</a> Release
+						  </div>
+					</div><!-- End Activity Item -->
+
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Sept '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-danger align-self-start'></i>
+						  <div class="activity-content">
+							Desai Trade <a class="fw-bold text-dark">v1.0</a> Release
+						  </div>
+					</div><!-- End Activity Item -->
+
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Aug '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-primary align-self-start'></i>
+						  <div class="activity-content">
+							MME Project <a class="fw-bold text-dark">v2.23.7</a> Base Release
+						  </div>
+					</div><!-- End Activity Item -->
+
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Aug '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-info align-self-start'></i>
+						  <div class="activity-content">
+							Desai Trade <a class="fw-bold text-dark">UAT</a> Release
+						  </div>
+					</div><!-- End Activity Item -->
+
+					<div class="activity-item d-flex">
+					  <div class="activite-label">Jul '23</div>
+					  <i class='bi bi-circle-fill activity-badge text-warning align-self-start'></i>
+						  <div class="activity-content">
+							MME Project <a class="fw-bold text-dark">v2.0</a> Release
+						  </div>
+					</div><!-- End Activity Item -->
+
+                </div>
+            </div>
+          </div><!-- End Recent Releases -->
+
+          <!-- Languages -->
+          <div class="card">
+            <div class="card-body pb-0">
+              <h5 class="card-title">Languages</h5>
+
+              <div id="trafficChart" style="min-height: 400px;" class="echart"></div>
+
+              <script>
+                document.addEventListener("DOMContentLoaded", () => {
+                  echarts.init(document.querySelector("#trafficChart")).setOption({
+                    tooltip: {
+                      trigger: 'item'
+                    },
+                    legend: {
+                      top: '5%',
+                      left: 'center'
+                    },
+                    series: [{
+                      name: 'Language',
+                      type: 'pie',
+                      radius: ['40%', '70%'],
+                      avoidLabelOverlap: false,
+                      label: {
+                        show: false,
+                        position: 'center'
+                      },
+                      emphasis: {
+                        label: {
+                          show: true,
+                          fontSize: '18',
+                          fontWeight: 'bold'
+                        }
+                      },
+                      labelLine: {
+                        show: false
+                      },
+                      data: [{
+                          value: 60.4,
+                          name: 'Apex'
+                        },
+                        {
+                          value: 22.7,
+                          name: 'JavaScript'
+                        },
+                        {
+                          value: 9.1,
+                          name: 'HTML'
+                        },
+                        {
+                          value: 4.9,
+                          name: 'Bootstrap'
+                        },
+                        {
+                          value: 2.9,
+                          name: 'CSS'
+                        }
+                      ]
+                    }]
+                  });
+                });
+              </script>
+
+            </div>
+          </div><!-- End Languages -->
+
+          <!-- Cedrus and CEO -->
+          <div class="card">
+            <img src="assets/img/CEO.png" class="card-img-top" alt="...">
+          </div><!-- End -->
+		  
+        </div><!-- End Right side columns -->
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CTAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+      Designed by <a href="#">Akash Bangalkar</a>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

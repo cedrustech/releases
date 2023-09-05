@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MME Project - Cedrus Tech</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/logo.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * App Name: CTAdmin
+  * Page Name: MME Project Release Notes
+  * Updated: Sept 05 2023 with Bootstrap v5.3.1
+  * Owner: Akash Bangalkar
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+        <span class="d-none d-lg-block">CTAdmin</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+	  <li class="nav-item">
+        <a class="nav-link collapsed" href="index.html">
+          <i class="bi bi-house"></i>
+          <span>Home</span>
+        </a>
+      </li><!-- End Home Nav -->
+	  
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="dashboard.html">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link " data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Projects</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse show" data-bs-parent="#sidebar-nav">
+          <li>
+            <a href="mme-project.html" class="active">
+              <i class="bi bi-circle"></i><span>MME Project</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Desai Trade</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="bi bi-circle"></i><span>Click Up</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Projects Section -->
+	  
+	  <!-- Page Section -->
+      <li class="nav-heading">Pages</li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="company-page.html">
+          <i class="bi bi-person"></i>
+          <span>Company</span>
+        </a>
+      </li><!-- End Company Page -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="contact-page.html">
+          <i class="bi bi-envelope"></i>
+          <span>Contact</span>
+        </a>
+      </li><!-- End Contact Page -->
+
+    </ul>
+
+  </aside><!-- End Sidebar -->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>MME Project - Release Notes</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item">Projects</li>
+		  <li class="breadcrumb-item"><a href="mme-project.html">MME Project</a></li>
+          <li class="breadcrumb-item active">Release Notes</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section">
+      <div class="row align-items-top">
+        <div class="col-lg-9">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Latest Base Version - v3.23.9</h5>
+
+              <!-- MME Releases -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      MME v3.0 (09-08-2023)
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Implemented GST Functionality for Invoices</h6>
+					  <p>»»&emsp;Now, you can easily apply GST rates of 5%, 12% or 18% to your invoices, and the corresponding GST amount will be 
+					  automatically calculated and added to the total amount.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 2. Icon for Mode of Transactions</h6>
+					  <p>»»&emsp;We've enhanced the user experience by adding icons for each mode of transaction. When you select a mode of transaction, such as "cash," 
+					  you will see a Cash icon, making it even more intuitive to identify your chosen mode.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 3. Total Amount Calculation in MoT Fields</h6>
+					  <p>»»&emsp;Introducing automation that dynamically reflects the total amount in a specific field based on the selected mode of transaction. 
+					  For example, if you choose the mode of transaction as "Cash," the total amount will be displayed in the Cash Amount field, while all other fields will show zero. 
+					  This feature simplifies reporting by allowing you to segregate billing calculations based on the mode of transaction.</p>
+					  <!--***-->
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 1. Field Labels (Names)</h6>
+					  <p>»»&emsp;Field labels have been updated as per your requests to ensure that the application aligns better with your needs and preferences.</p>
+					  
+					  <h6><span class="badge bg-dark">Added</span> 2. Company Holiday Data</h6>
+					  <p>»»&emsp;We have made modifications and additions to the company holiday data to keep it up-to-date and accurate for your scheduling and reporting purposes.</p>
+					  
+					  <h6><span class="badge bg-dark">Added</span> 3. Validation Rules for Some of the Date Fields</h6>
+					  <p>»»&emsp;To enhance data integrity and consistency, validation rules have been added to certain date fields, helping to maintain the quality of your data.</p>
+					</div>
+                  </div>
+                </div><!-- End MME v3.0 -->
+				
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      MME v2.0 (07-26-2023)
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Analog and Digital Clock on Home Page</h6>
+					  <p>»»&emsp;Keep track of time conveniently right from your home page with the newly added analog and digital clocks.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 2. Quantity Details Table on Stock Record Page</h6>
+					  <p>»»&emsp;Easily view and manage quantity details for your stock records like Available Quantity, Sold Out Quantity, 
+					  In Cart Quantity and Outward Quantity on the Stock Record Page.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 3. Discount Functionality for Invoice</h6>
+					  <p>»»&emsp;Streamline your billing process with the addition of a discount functionality for invoices, 
+					  where in you can add discount percentage while adding sale item in invoice bill.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 4. Button to Pay and View Invoice</h6>
+					  <p>»»&emsp;Simplify invoice management by providing a one-click option to pay and view invoices directly.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 5. Gatepass Functionality with Automations</h6>
+					  <p>»»&emsp;Introducing a comprehensive gatepass functionality with automation features to enhance security and control. 
+					  This feature can be use for outward stock operation management.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 6. Button to Close and View Gatepass</h6>
+					  <p>»»&emsp;Quickly close and view gatepasses with the new button for added convenience.</p>
+					  <!--***-->
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 1. Application Logo and Theme</h6>
+					  <p>»»&emsp;Enjoy a fresh look with updated application branding and theme.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 2. Auto-Capital Functionality Issue</h6>
+					  <p>»»&emsp;Addressed and resolved the auto-capital functionality issue for smoother data entry.</p>
+					  
+					  <h6><span class="badge bg-secondary">Improved</span> 3. Apex Code Coverage Result - 100%</h6>
+					  <p>»»&emsp;Enhancements have been made to ensure that our app maintains 100% Apex code coverage for optimal performance and reliability.</p>
+					</div>
+                  </div>
+                </div><!-- End MME v2.0 -->
+				
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      MME v1.0 (06-20-2023)
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p>&emsp; &emsp;We're thrilled to introduce the inaugural release of our Salesforce App, MME Project - the ultimate solution for effortless bill and invoice calculations. 
+					  With MME Project, complex calculations become a thing of the past, as it automates the entire billing process. 
+					  Additionally, our app boasts robust stock item management capabilities, ensuring that you can efficiently track sold-out and available items.</p>
+                      <!--***-->
+					  <p><b>Key Features </b><span class="badge bg-info">New</span></p>
+					  
+					  <h6>1. Streamlined Stock Item Management</h6>
+					  <p>»»&emsp;Experience hassle-free stock item management within MME Project. Effortlessly add, update, and monitor your inventory to keep your business running smoothly. 
+					  Here you can check related bills for the particular stock item.</p>
+					  
+					  <h6>2. Real-time Inventory Updates</h6>
+					  <p>»»&emsp;MME Project provides real-time updates on item availability and sold-out products. 
+					  Stay in the loop and make informed decisions to better serve your customers.</p>
+					  
+					  <h6>3. Automated Bill Calculations</h6>
+					  <p>»»&emsp;MME Project takes the headache out of bill and invoice calculations. 
+					  No more manual number-crunching - MME Project handles it all with precision and speed.</p>
+					  <!--***-->
+					  <p><b>What's on the Horizon </b><span class="badge bg-info">New</span></p>
+					  
+					  <p>»»&emsp;In this initial release, we've focused on delivering the core functionality to simplify your billing and stock management processes. However, we're committed to continuous improvement and have plans to enhance MME Project in future releases. 
+					  Here are some of the key features that we provided in this version:</p>
+					  <ul>
+						<li>Consignment and Contact List with Details</li>
+						<li>List Views and Lightning Pages</li>
+						<li>Invoice Status Automation with Icons</li>
+						<li>Auto Capital Functionality</li>
+						<li>Validation Rules</li>
+						<li>Duplicate Value Restriction Functionality</li>
+					  </ul>
+					</div>
+                  </div>
+                </div><!-- End MME v1.0 -->
+              </div>
+            </div>
+          </div>
+        </div>
+		
+		<div class="col-lg-3">
+		  <!-- Project Logo -->
+          <div class="card text-center">
+		    <img src="assets/img/mme-logo.png" class="card-img-top" alt="...">
+          </div><!-- End -->
+          <!-- Release Notes Button -->
+          <div class="text-center">
+            <a href="mme-project.html">
+			  <button style="margin:5px;" type="button" class="btn btn-primary"><i class="bi bi-info-circle"></i> Project Info</button>
+			</a>
+          </div><!-- End -->
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>CTAdmin</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      
+      Designed by <a href="">Akash Bangalkar</a>
+    </div>
+  </footer><!-- End Footer -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
