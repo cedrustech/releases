@@ -87,13 +87,18 @@
             </a>
           </li>
           <li>
-            <a href="error-404.html">
+            <a href="">
               <i class="bi bi-circle"></i><span>Click Up</span>
             </a>
           </li>
 		  <li>
             <a href="fin-track.html">
               <i class="bi bi-circle"></i><span>FinTrack App</span>
+            </a>
+          </li>
+		  <li>
+            <a href="">
+              <i class="bi bi-circle"></i><span>TNT Express</span>
             </a>
           </li>
         </ul>
@@ -139,10 +144,157 @@
         <div class="col-lg-9">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Latest Base Version - v4.23.11</h5>
+              <h5 class="card-title">Latest Base Version - v5.0.24.9</h5>
 
               <!-- MME Releases -->
               <div class="accordion" id="accordionExample">
+			  
+				<div class="accordion-item"><!-- MME v5.0.3 -->
+                  <h2 class="accordion-header" id="releaseFiveThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveThree" aria-expanded="false" aria-controls="collapseFiveThree">
+                      MME v5.0.3 (30-09-2024)
+                    </button>
+                  </h2>
+                  <div id="collapseFiveThree" class="accordion-collapse collapse" aria-labelledby="releaseFiveThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Automation Added for Serial Numbers on Invoice Reports</h6>
+					  <p>»»&emsp;Implemented automation to assign a unique serial number to each invoice record in the reports, improving tracking and organization.</p>
+
+					  <h6><span class="badge bg-info">New</span> 2. Record Ownership and Modification History Tracking</h6>
+					  <p>»»&emsp;Implemented a feature to display the Created By and Last Modified By history for each record, along with the current record owner. This functionality enables verification of ownership to ensure the record owner is a member of organization. If the owner is external, we now have the capability to make necessary changes. This feature is available for all objects and records within the application.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 3. Automation for Default Record Ownership Assignment</h6>
+					  <p>»»&emsp;Implemented automation to set default record ownership assignments, streamlining the process for new records within the application.</p>
+					  <!--***-->
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 1. Updated App Logo and Theme Colors</h6>
+					  <p>»»&emsp;Replaced the current logo with the new logo for MME App. Also updated the brand and global header background colors to enhance the App’s visual identity.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 2. Issue with Changing Record Owner of Consignment</h6>
+					  <p>»»&emsp;Resolved an error when attempting to change the Record Owner in the Consignment. This issue affects certain records, while others update successfully.</p>
+					</div>
+				  </div>
+                </div><!-- End MME v5.0.3 -->
+			  
+				<div class="accordion-item"><!-- MME v5.0.2 -->
+                  <h2 class="accordion-header" id="releaseFiveTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveTwo" aria-expanded="false" aria-controls="collapseFiveTwo">
+                      MME v5.0.2 (31-08-2024)
+                    </button>
+                  </h2>
+                  <div id="collapseFiveTwo" class="accordion-collapse collapse" aria-labelledby="releaseFiveTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 1. Simplified and Reduced Mode of Transaction Options</h6>
+					  <p>»»&emsp;In the Invoice section, removed one of the existing mode of transaction values, retaining only Cash and Card/UPI as the available options.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 2. Error Occurred While Changing Invoice Status to Paid</h6>
+					  <p>»»&emsp;Resolved the newly occurred System.DmlException error that occurred while changing the invoice status to Paid.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 3. Cancelled Invoices Not Counted in Summary</h6>
+					  <p>»»&emsp;Resolved the issue where cancelled invoices were not reflected in the Summary records. The total invoice count now accurately excludes cancelled invoices, and the Invoice Range field is updated accordingly.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 4. Cancelled Button Was Incorrectly Displayed on Already Cancelled Invoices</h6>
+					  <p>»»&emsp;Resolved the issue where the Cancel button was incorrectly displayed on invoices that were already cancelled. The button will no longer appear for invoices in the cancelled status.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 5. Invoice Status Check Failure in Summary Month Removal</h6>
+					  <p>»»&emsp;Corrected the functionality that allowed users to modify Summary Month field  even when the invoice status was Paid or Cancelled. Users are now restricted from modifying Summary Month field under these conditions.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 6. Summary Month Field Modification Restricted</h6>
+					  <p>»»&emsp;Users are now restricted from modifying the Summary Month field, as the system automatically selects the Summary Month record based on the chosen date.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 7. Summary Month Field Modification Restricted</h6>
+					  <p>»»&emsp;Added restriction to prevent users from adding sale items once an invoice is closed.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 8. Summary Includes Pending Invoices</h6>
+					  <p>»»&emsp;Resolved the issue where the Summary included details of both closed and pending invoices. Now, the Summary will only reflect information for closed invoices, ensuring accurate reporting.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 9. Dashboard Charts Include Pending Invoice Amounts</h6>
+					  <p>»»&emsp;Resolved the issue where the Sales charts in Dashboard included amounts for pending invoices. The charts now accurately reflect only the amounts for closed invoices.</p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 10. Increased Character Limit for Customer Name Field in Invoice</h6>
+					  <p>»»&emsp;The character limit for the Customer Name field in the Invoice has been increased from 25 to 100 characters, allowing for more comprehensive entries.</p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 11. Updated Transaction Icons for Both Payment Options</h6>
+					  <p>»»&emsp;Updated the transaction icons to include a new icon for Cashless Payment (Card/UPI) as well as an icon for Cash Payment, enhancing visual clarity for both options.</p>
+					</div>
+				  </div>
+                </div><!-- End MME v5.0.2 -->
+			  
+				<div class="accordion-item"><!-- MME v5.0.1 -->
+                  <h2 class="accordion-header" id="releaseFiveOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveOne" aria-expanded="false" aria-controls="collapseFiveOne">
+                      MME v5.0.1 (01-07-2024)
+                    </button>
+                  </h2>
+                  <div id="collapseFiveOne" class="accordion-collapse collapse" aria-labelledby="releaseFiveOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Sales Performance Analyzer: Comprehensive Monthly Analysis</h6>
+					  <p>»»&emsp;Implemented a Sales Performance Analyzer feature in the MME Project. This tool enhances the tracking and comparison of monthly sales data, providing users with comprehensive insights to effectively analyze sales performance.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.1 Setup Relationship of New Summary Object with Invoice</h6>
+					  <p>»»&emsp;A relationship field has been setup on the Invoice, linking it to the Summary custom object. When an invoice date is selected, the system automatically determines and selects the corresponding Month record in the field based on the chosen date.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.2 Added Automation for Total Sale Amount and Sold Qty Count</h6>
+					  <p>»»&emsp;Added automation to calculate and update the Total Sale Amount and Sold Quantity Count for each month in the Summary custom object whenever an invoice status is marked as Paid.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.3 Status Indicator for Monthly Sales Summary</h6>
+					  <p>»»&emsp;A status indicator has been implemented in the Summary object to visually represent each month's sales performance. This indicator uses symbols to compare the current month's sales to the previous month's performance.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.4 Summary Creation Restriction Based on Existing Invoices</h6>
+					  <p>»»&emsp;Implemented a restriction on creating new Summary records. The system will  prevent the creation of a new Summary record if any invoices already exist in the database.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.5 Automation to Update Previous Summary Status</h6>
+					  <p>»»&emsp;Added automation to update the status of the previous Summary record to Completed whenever a new Summary record is created.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.6 User Modification Restriction on Summary Record</h6>
+					  <p>»»&emsp;Users are restricted from modifying the Summary record if its status is marked as Completed. Access to edit these records is no longer allowed.</p>
+					  
+					  <h6><span class="badge bg-secondary"> </span> 1.7 Automation for Total Cash and Debit Card/UPI Amount</h6>
+					  <p>»»&emsp;Implemented automation to calculate and update the Total Cash Amount and Debit Card/UPI Amount for each month in the Summary custom object whenever an invoice status is marked as Paid.</p>
+					</div>
+				  </div>
+                </div><!-- End MME v5.0.1 -->
+			  
+				<div class="accordion-item"><!-- MME v5.0 -->
+                  <h2 class="accordion-header" id="releaseFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      MME v5.0 (30-05-2024)
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="releaseFive" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Introduced GST Fields in the Stock Object</h6>
+					  <p>»»&emsp;Added new fields to the Stock - Now you can enter the HSN Code and the GST Rate for each product. This will help you keep track of taxes more easily.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 2. Sale Object Update: Added Tax Information</h6>
+					  <p>»»&emsp;Introduced new fields in the Sale object. You can now track Taxable Amount, CGST, and SGST for each sale. This enhancement will help you manage tax calculations more accurately.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 3. Added New GST Value (3%) in Sale GST Field</h6>
+					  <p>»»&emsp;Added a new GST value of 3% to the Sale GST field. You can now input this value in the GST field of the Sale object, making it easier to manage your GST calculations.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 4. Updated Sales and Stock Reports with New GST Fields</h6>
+					  <p>»»&emsp;We’ve enhanced the Sales and Stock reports to include the new GST fields. You can now view and analyze tax and GST-related information more effectively.</p>
+					  <!--***-->
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 1. Sales Qty Rounding Decimals Issue</h6>
+					  <p>»»&emsp;We have resolved the issue where the system rounded decimal quantities to the nearest integer during sales entry. Users will now see the precise decimal quantities entered, eliminating any confusion while maintaining accurate calculations on invoices.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 2. Improved Stock Tracking: Entire Year Quantities Available</h6>
+					  <p>»»&emsp;The Stock section previously displayed quantities for the current month only. This issue has been fixed, and the component now shows quantities for the entire financial year.</p>
+					</div>
+				  </div>
+                </div><!-- End MME v5.0 -->
+			  
 				<div class="accordion-item"><!-- MME v4.0 -->
                   <h2 class="accordion-header" id="releaseFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
@@ -152,6 +304,38 @@
                   <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="releaseFour" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
 					  <p><b>New Features and Enhancements</b></p>
+					  
+					  <h6><span class="badge bg-info">New</span> 1. Implemented a Functionality for Custom Sales Analytics Detail</h6>
+					  <p>»»&emsp;The Sales Analytics feature now enables users to view detailed monthly sales data for each stock item, allowing for accurate cross-checking and verification of sales figures.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 2. Implemented Invoice Cancellation Functionality</h6>
+					  <p>»»&emsp;The Invoice Cancellation functionality has been implemented, allowing users to easily cancel the current invoice with the click of a button.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 3. Added Sale History for Stock Items</h6>
+					  <p>»»&emsp;The Sale History feature has been added, providing users with the option to view the total items sold for each stock item on a monthly basis.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 4. Added Consignment Name in Contact Object</h6>
+					  <p>»»&emsp;A new Consignment Name field has been added to the Contact object. This field automatically records the name of the consignment whenever a user or contact person is linked, making it easier to track related information.</p>
+					  
+					  <h6><span class="badge bg-info">New</span> 5. Unique Contact Ownership Enforcement for Consignments</h6>
+					  <p>»»&emsp;The Unique Contact Ownership Enforcement feature has been developed to ensure that each consignment has only one designated contact person. This feature prevents a contact record from being assigned as a consignment owner if they are already linked to another consignment, ensuring clear ownership and avoiding duplication.</p>
+					  <!--***-->
+					  <p><b>What's Changed/Fixed</b></p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 1. Restricted Date Fields on Stock - Not Accept the Past 1 Year Later Date</h6>
+					  <p>»»&emsp;The date fields on the Stock custom object have been updated to include a validation rule that prevents users from entering dates that are more than one year in the past. This ensures that only relevant and up-to-date dates can be recorded.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 2. Gatepass Number Validation Issue</h6>
+					  <p>»»&emsp;The Gatepass Number validation issue has been resolved. The validation rule has been updated to accept letters, numbers, and hyphen symbols. The required format for the Gatepass Number is now <b>GP-0000</b>, ensuring proper entry without errors.</p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 3. Added Consignment Name in Gatepass</h6>
+					  <p>»»&emsp;The Consignment Name field has been added to the Gatepass, and the Contact Name lookup field has been removed. This change streamlines the information captured in the Gatepass, allowing for easier tracking of consignments.</p>
+					  
+					  <h6><span class="badge bg-danger">Fixed</span> 4. Removed Unnecessary Fields and Sections from Stock (New Entry)</h6>
+					  <p>»»&emsp;The issue of unnecessary fields and sections appearing when creating a new stock entry has been addressed. This change reduces clutter and confusion in the interface, providing a cleaner and more streamlined experience for users.</p>
+					  
+					  <h6><span class="badge bg-warning">Changed</span> 5. Added New Picklist Value to Gatepass Category</h6>
+					  <p>»»&emsp;A new value, <b>Return of Goods</b> has been added to the Gatepass Category field, providing users with an additional option for categorizing gatepass records.</p>
 					</div>
 				  </div>
                 </div><!-- End MME v4.0 -->
